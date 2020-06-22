@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment"
+    android:id="@+id/home_nav_graph">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="fi.ketjusovellus.ketjupilotti.main.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"
+        >
+
+        <action
+            android:id="@+id/action_homeFragment_to_registerPhoneFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/registerPhoneFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_exposuresListFragment"
+            app:destination="@id/exposuresListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerPhoneFragment"
+        android:name="fi.ketjusovellus.ketjupilotti.registerphone.RegisterPhoneFragment"
+        android:label="RegisterPhoneFragment"
+        tools:layout="@layout/fragment_phonenumber_register">
+
+        <action
+            android:id="@+id/action_registerPhoneFragment_to_pinVerificationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/pinVerificationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pinVerificationFragment"
+        android:name="fi.ketjusovellus.ketjupilotti.registerphone.PinVerificationFragment"
+        android:label="PinFragment"
+        tools:layout="@layout/fragment_phonenumber_pin"
+        >
+
+        <action
+            android:id="@+id/action_pinVerificationFragment_to_homeFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/homeFragment"
+            app:destination="@id/homeFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/exposuresListFragment"
+        android:name="fi.ketjusovellus.ketjupilotti.main.ExposuresListFragment"
+        android:label="ExposuresListFragment"
+        tools:layout="@layout/fragment_exposures_list"
+        >
+        <action
+            android:id="@+id/action_exposuresListFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+</navigation>

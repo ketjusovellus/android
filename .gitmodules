@@ -1,0 +1,4 @@
+[submodule "dp3t-sdk-android"]
+	path = dp3t-sdk-android
+	url = git@github.com:ketjusovellus/dp3t-sdk-android.git
+	branch = ketju-pilot

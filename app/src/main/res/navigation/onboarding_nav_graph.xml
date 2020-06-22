@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/testIdFragment"
+    android:id="@+id/onboarding_nav_graph"
+    >
+
+    <fragment
+        android:id="@+id/testIdFragment"
+        android:name="fi.ketjusovellus.ketjupilotti.onboarding.TestIdFragment"
+        android:label="TestIdFragment"
+        tools:layout="@layout/fragment_onboarding_test_id"
+        >
+        <action
+            android:id="@+id/action_testIdFragment_to_landingFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/landingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="fi.ketjusovellus.ketjupilotti.onboarding.LandingFragment"
+        android:label="LandingFragment"
+        tools:layout="@layout/fragment_onboarding_landing"
+        >
+
+        <action
+            android:id="@+id/action_landingFragment_to_encountersFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/encountersFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/encountersFragment"
+        android:name="fi.ketjusovellus.ketjupilotti.onboarding.EncountersFragment"
+        android:label="EncountersFragment"
+        tools:layout="@layout/fragment_onboarding_encounters"
+        >
+
+        <action
+            android:id="@+id/action_encountersFragment_to_infectionFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/infectionFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/infectionFragment"
+        android:name="fi.ketjusovellus.ketjupilotti.onboarding.InfectionFragment"
+        android:label="InfectionFragment"
+        tools:layout="@layout/fragment_onboarding_infection"
+        >
+
+        <action
+            android:id="@+id/action_infectionFragment_to_mainActivity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/mainActivity"
+            app:launchSingleTop="true"
+            />
+    </fragment>
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="fi.ketjusovellus.ketjupilotti.main.MainActivity"
+        android:label="MainActivity"
+        tools:layout="@layout/activity_main"
+        >
+    </activity>
+
+</navigation>

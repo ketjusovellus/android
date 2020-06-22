@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Ketju Pilotti</string>
+
+    <string name="onboarding_landing_title">Liittymällä Ketjuun kannat kortesi kekoon koronaviruksen löytämiseksi ja pysäyttämiseksi.</string>
+    <string name="onboarding_encounters_title">Kohtaamiset tallenetaan anonyymisti, Bluetooth -teknologian avulla.</string>
+    <string name="onboarding_exposure_title">Mikäli altistut, lähetämme ilmoituksen.</string>
+    <string name="onboarding_infection_title">Jos altistut virukselle, ilmoitamme siitä sinulle välittömästi.</string>
+    <string name="onboarding_phone_register_title">Syötä puhelinnumero</string>
+    <string name="onboarding_phone_register_description">Puhelinnumeroa käytetään PIN-koodin tarkastusta varten, sitä ei jaeta eteenpäin.</string>
+    <string name="onboarding_phone_register_side_note">Mikäli asennat sovellusta toiselle, käytä hänen numeroaan, ellet halua vastaanottaa yhteydenottoja kyseisen henkilön puolesta.</string>
+    <string name="onboarding_permissions_location_title">Sovellus tarvitsee ACCESS_FINE_LOCATION-luvan</string>
+    <string name="onboarding_permissions_location_description">Android-käyttöjärjestelmä vaatii "sijainnin seuraamisluvan" Bluetooth-kohtaamisten muodostamista varten. Sovellus käyttää lupaa vain kohtaamisten muodostamiseen, eikä milloinkaan seuraa tai tallenna sijaintiasi.</string>
+
+    <!-- String definitions for home views -->
+    <string name="home_ketju_active_title">Ketju on päällä</string>
+    <string name="home_ketju_active_description">Pidä sovellus aktiivisena aina, kun liikut ihmisten ilmoilla.</string>
+    <string name="home_ketju_inactive_bluetooth_title">Bluetooth kiinni</string>
+    <string name="home_ketju_inactive_bluetooth_description">Kytke Bluetooth-yhteys päälle, jotta sovellus toimii.</string>
+    <string name="home_ketju_inactive_bluetooth_link">Avaa Bluetooth</string>
+    <string name="home_ketju_inactive_location_title">Paikkatietolupa</string>
+    <string name="home_ketju_inactive_location_description">Bluetoothin käyttö edellyttää paikkatietolupaa Android-laitteilla.</string>
+    <string name="home_ketju_inactive_location_link">Anna paikkatietolupa</string>
+    <string name="home_ketju_inactive_location_services_title">Sijaintipalvelut</string>
+    <string name="home_ketju_inactive_location_services_description">Bluetooth-skannauksen käyttö edellyttää, että sijaintipalvelut ovat päällä.</string>
+    <string name="home_ketju_inactive_location_services_link">Muuta asetuksista</string>
+    <string name="home_ketju_inactive_battery_optimizations_title">Virransäästö päällä</string>
+    <string name="home_ketju_inactive_battery_optimizations_description">Virransäästötila estää Bluetoothin toiminnan sovelluksen ollessa taustalla.</string>
+    <string name="home_ketju_inactive_battery_optimizations_link">Muuta asetuksista</string>
+    <string name="home_ketju_incative_notifications_title">Ilmoitukset estetty</string>
+    <string name="home_ketju_inactive_notifications_description">Sovellus tarvitsee oikeuden lähettää sinulle ilmoituksia.</string>
+    <string name="home_ketju_inactive_notifications_link">Salli ilmoitukset.</string>
+    <string name="home_ketju_enabled_indicator_text">Ketju</string>
+    <string name="home_allow_bluetooth_link">Salli bluetooth-yhteys asetuksissa</string>
+    <string name="home_got_sick">Sairastuitko?</string>
+
+    <!-- String definitions for sharing contact data -->
+    <string name="contagion_share_contacts_key_title">Syötä PIN-koodi</string>
+    <string name="contagion_share_contacts_key_description">Vahvista anonyymi tartuntatiedon\njakaminen PIN-koodilla jonka saat\nhoitohenkilökunnalta.</string>
+    <string name="contagion_share_contacts_key_note">Huom! Henkilö- ja kohtaamistietojasi käsitellään luottamuksellisesti eivätkä ne tule ilmi muille Ketjun käyttäjille.\n\nKiitos, että autat terveydenhuoltoa taistelussa virusta vastaan!</string>
+    <string name="contagion_share_contacts_key_otp_code_hint">Syötä koodi</string>
+    <string name="contagion_contacts_shared_title">Kohtaamisavain jaettu</string>
+    <string name="contagion_contacts_shared_description">Kiitos avustasi ja mitä pikaisinta paranemista!</string>
+    <string name="contagion_share_contacts_error_title">Virhe tartuntatiedon jakamisessa!</string>
+    <string name="contagion_share_contacts_error_description">Tartuntatiedon jako epäonnistui. Ole hyvä, ja tarkista puhelinnumerosi ja PIN-koodisi.</string>
+
+    <!-- Possible exposures list -->
+    <string name="button_close">Sulje</string>
+    <string name="exposures_list_title">Mahdollisia altistumisia:</string>
+    <string name="exposures_list_item">%1d altistumista</string>
+
+    <!-- String definitions for notifications -->
+    <string name="notification_exposed_title">Sinulla on mahdollinen koronavirusaltistuminen</string>
+    <string name="notification_exposed_text">Tallennetujen kohtaamistietojen joukossa on todennettu koronavirustartunta. Ota yhteyttä hoitohenkilökuntaan itsesi ja läheistesi suojelemiseksi koronavirukselta.</string>
+
+    <!-- TEST MODE ONLY TEXTS! -->
+    <string name="onboarding_personal_test_id">Syötä henkilökohtainen nelimerkkinen testi-ID</string>
+    <string name="onboarding_personal_test_id_hint">ID</string>
+    <string name="onboarding_tech_pilot">Tekninen pilotti</string>
+
+    <!-- Button texts -->
+    <string name="button_next">Seuraava</string>
+    <string name="button_allow_bluetooth">Salli Bluetooth</string>
+    <string name="button_join_ketju">Liity Ketjuun</string>
+    <string name="button_share_contacts_key">Jaa tartuntatieto</string>
+
+</resources>

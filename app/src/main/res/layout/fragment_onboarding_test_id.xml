@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".onboarding.TestIdFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    >
+
+    <include layout="@layout/component_tech_pilot_header"
+        android:id="@+id/tech_pilot_header"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/test_id_title"
+        style="@style/BoldTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vertical_guideline"
+        app:layout_constraintWidth_percent="0.8"
+        android:text="@string/onboarding_personal_test_id"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/test_id_input"
+        style="@style/EditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/margin_l"
+        app:layout_constraintTop_toBottomOf="@id/test_id_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:inputType="text"
+        android:maxLength="4"
+        android:hint="@string/onboarding_personal_test_id_hint"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_next"
+        style="@style/PrimaryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_xl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:enabled="false"
+        android:text="@string/button_next"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

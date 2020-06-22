@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dp3t_sdk_service_notification_channel">Ketju</string>
+    <string name="dp3t_sdk_service_notification_title">Ketju Pilotti</string>
+    <string name="dp3t_sdk_service_notification_text">Etsitään lähistöllä olevia laitteita…</string>
+    <string name="dp3t_sdk_service_notification_errors">Sovelluksen toiminta estynyt:</string>
+    <string name="dp3t_sdk_service_notification_error_location_permission">puuttuva lokaatiolupa</string>
+    <string name="dp3t_sdk_service_notification_error_location_service">sijaintipalvelut poissa päältä</string>
+    <string name="dp3t_sdk_service_notification_error_bluetooth_disabled">bluetooth sammutettu</string>
+    <string name="dp3t_sdk_service_notification_error_battery_optimization">virransäästön optimoinnit käytössä</string>
+    <string name="dp3t_sdk_service_notification_error_bluetooth_not_supported">bluetooth LE ei ole tuettu tällä laitteella</string>
+    <string name="dp3t_sdk_service_notification_error_bluetooth_internal_error">häiriö bluetooth-palveluissa, ole hyvä ja käynnistä laite uudellen</string>
+    <string name="dp3t_sdk_service_notification_error_bluetooth_advertising_error">bluetooth-kuulutusten lähetys epäonnistui</string>
+    <string name="dp3t_sdk_service_notification_error_bluetooth_scanner_error">bluetooth-skannaus epäonnistui</string>
+    <string name="dp3t_sdk_service_notification_error_sync_server">tartuntatietojen nouto epäonnistui (palvelinvirhe)</string>
+    <string name="dp3t_sdk_service_notification_error_sync_network">tartuntatietojen nouto epäonnistui (verkkovirhe)</string>
+    <string name="dp3t_sdk_service_notification_error_sync_database">tartuntatietojen nouto epäonnistui (tietokantavirhe)</string>
+    <string name="dp3t_sdk_service_notification_error_sync_signature">tartuntatietojen nouto epäonnistui (virheellinen varmenne)</string>
+    <string name="dp3t_sdk_service_notification_error_sync_timing">synkronointivirhe, puhelimen aika poikkeaa palvelimen ajasta</string>
+</resources>

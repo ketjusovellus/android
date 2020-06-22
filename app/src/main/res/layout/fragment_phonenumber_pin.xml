@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".registerphone.PinVerificationFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    >
+
+    <include layout="@layout/component_tech_pilot_header"
+        android:id="@+id/tech_pilot_header"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/phone_auth_header"
+        style="@style/BoldTextStyleBlue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tech_pilot_header"
+        app:layout_constraintWidth_percent="0.8"
+        android:gravity="center"
+        android:text="@string/home_got_sick"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/phone_auth_title"
+        style="@style/BoldTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xxl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone_auth_header"
+        app:layout_constraintWidth_percent="0.8"
+        android:text="@string/contagion_share_contacts_key_title"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/phone_auth_description"
+        style="@style/DefaultTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_l"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone_auth_title"
+        app:layout_constraintWidth_percent="0.8"
+        android:text="@string/contagion_share_contacts_key_description"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/otp_input"
+        style="@style/EditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/margin_l"
+        app:layout_constraintTop_toBottomOf="@id/phone_auth_description"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:maxLength="6"
+        android:hint="@string/contagion_share_contacts_key_otp_code_hint"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/phone_auth_otp_expiration"
+        style="@style/DefaultTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_l"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/otp_input"
+        android:text="@string/contagion_share_contacts_key_note"
+        android:visibility="gone"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_next"
+        style="@style/PrimaryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_xl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:text="@string/button_share_contacts_key"
+        android:enabled="false"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

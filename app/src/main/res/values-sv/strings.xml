@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Ketju Pilotti</string>
+
+    <string name="onboarding_landing_title">Anslut dig till Kedjan och var med och hindra spridningen av coronaviruset.</string>
+    <string name="onboarding_encounters_title">Dina möten sparas anonymt med hjälp av Bluetooth\n-teknologin.</string>
+    <string name="onboarding_exposure_title">Mikäli altistut, lähetämme ilmoituksen.</string>
+    <string name="onboarding_infection_title">Vi meddelar dig omedelbart om du har blivit exponerad för coronaviruset.</string>
+    <string name="onboarding_phone_register_title">Ange ditt telefonnummer</string>
+    <string name="onboarding_phone_register_description">Telefonnumret används som PIN-kod för verifiering och delas inte vidare.</string>
+    <string name="onboarding_phone_register_side_note">Mikäli asennat sovellusta toiselle, käytä hänen numeroaan, ellet halua vastaanottaa yhteydenottoja kyseisen henkilön puolesta.</string>
+    <string name="onboarding_permissions_location_title">Applikationen behöver ACCESS_FINE_LOCATION-tillstånd</string>
+    <string name="onboarding_permissions_location_description">För att kunna skapa Bluetooth-möten, begär Android-operativsystemet tillgång till din platsinformation. Applikationen använder din platsinformation endast för att skapa möten. Information om din aktuella plats samlas ej in.</string>
+
+    <!-- String definitions for home views -->
+    <string name="home_ketju_active_title">Kedjan är på!</string>
+    <string name="home_ketju_active_description">Behåll applikationen aktiv hela tiden.</string>
+    <string name="home_ketju_inactive_bluetooth_title">Bluetooth är avstängt</string>
+    <string name="home_ketju_inactive_bluetooth_description">Aktivera Bluetooth-anslutningen i din telefons inställningar.</string>
+    <string name="home_ketju_inactive_bluetooth_link">Öppna Bluetooth</string>
+    <string name="home_ketju_inactive_location_title">Tillstånd att använda din platsinformation</string>
+    <string name="home_ketju_inactive_location_description">Du skall aktivera din platsinformation för att använda Bluetooth med Android-enheten.</string>
+    <string name="home_ketju_inactive_location_link">Ge tillstånd</string>
+    <string name="home_ketju_inactive_location_services_title">Platstjänster</string>
+    <string name="home_ketju_inactive_location_services_description">För att kunna använda Bluetooth-skanning måste platstjänster vara på.</string>
+    <string name="home_ketju_inactive_location_services_link">Anpassa</string>
+    <string name="home_ketju_inactive_battery_optimizations_title">Strömsparläge aktiverat</string>
+    <string name="home_ketju_inactive_battery_optimizations_description">Strömsparläget förhindrar användningen av Bluetooth med applikationen i bakgrunden.</string>
+    <string name="home_ketju_inactive_battery_optimizations_link">Anpassa</string>
+    <string name="home_ketju_incative_notifications_title">Notiser inaktiverade</string>
+    <string name="home_ketju_inactive_notifications_description">Applikationen vill skicka notiser till dig.</string>
+    <string name="home_ketju_inactive_notifications_link">Tillåt aviseringar.</string>
+    <string name="home_ketju_enabled_indicator_text">Ketju</string>
+    <string name="home_allow_bluetooth_link">Aktivera Bluetooth-anslutningen i din telefons inställningar.</string>
+    <string name="home_got_sick">Blev du sjuk?</string>
+
+    <!-- String definitions for sharing contact data -->
+    <string name="contagion_share_contacts_key_title">Ange PIN-kod</string>
+    <string name="contagion_share_contacts_key_description">Bekräfta det anonyma delandet av coronasmittan med PIN-koden du erhöll av vårdpersonalen.</string>
+    <string name="contagion_share_contacts_key_note">Huom! Henkilö- ja kohtaamistietojasi käsitellään luottamuksellisesti eivätkä ne tule ilmi muille Ketjun käyttäjille.\n\nKiitos, että autat terveydenhuoltoa taistelussa virusta vastaan!</string>
+    <string name="contagion_share_contacts_key_otp_code_hint">Ange PIN kod</string>
+    <string name="contagion_contacts_shared_title">Informationen om smittan är delad.</string>
+    <string name="contagion_contacts_shared_description">Informationen om smittan är delad. Vårdpersonalen tackar!</string>
+    <string name="contagion_share_contacts_error_title">Fel vid delning av informationen om smittan</string>
+    <string name="contagion_share_contacts_error_description">Kolla ditt telefonnummer och PIN-kod.</string>
+
+    <!-- Possible exposures list -->
+    <string name="button_close">Stäng</string>
+    <string name="exposures_list_title">Du har eventuellt exponerats för coronasmitta.:</string>
+    <string name="exposures_list_item">%1d exponeringar</string>
+
+    <!-- String definitions for notifications -->
+    <string name="notification_exposed_title">Du har eventuellt exponerats för coronasmitta.</string>
+    <string name="notification_exposed_text">Tallennetujen kohtaamistietojen joukossa on todennettu koronavirustartunta. Ota yhteyttä hoitohenkilökuntaan itsesi ja läheistesi suojelemiseksi koronavirukselta.</string>
+
+    <!-- TEST MODE ONLY TEXTS! -->
+    <string name="onboarding_personal_test_id">Ange ditt personliga fyrsiffriga test-ID</string>
+    <string name="onboarding_personal_test_id_hint">ID</string>
+    <string name="onboarding_tech_pilot">Tekniskt pilotförsök</string>
+
+    <!-- Button texts -->
+    <string name="button_next">Nästa</string>
+    <string name="button_allow_bluetooth">Tillåt Bluetooth</string>
+    <string name="button_join_ketju">Tillåt notiser</string>
+    <string name="button_share_contacts_key">Dela info om smittan</string>
+
+</resources>
